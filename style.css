@@ -3,6 +3,12 @@
 html {
     --color-accent: oklch(65% 50% 0);
     accent-color: var(--color-accent);
+
+    /* Lab 3, Step 4.1: follow the OS light/dark setting */
+    color-scheme: light dark;
+
+    /* Lab 3: a border color that looks subtle in both light and dark mode */
+    --border-color: oklch(50% 10% 200 / 40%);
 }
 
 /* ===== Page basics (Lab 1 + Step 1) ===== */
@@ -29,7 +35,7 @@ nav li {
 nav {
     display: flex;
     margin-bottom: 1em;
-    border-bottom: 1px solid oklch(80% 3% 200);
+    border-bottom: 1px solid var(--border-color);
 }
 
 nav a {
@@ -41,20 +47,21 @@ nav a {
 }
 
 nav a.current {
-    border-bottom: 0.4em solid oklch(80% 3% 200);
+    border-bottom: 0.4em solid var(--border-color);
     padding-bottom: 0.1em;
 }
 
 nav a:hover {
     border-bottom: 0.4em solid var(--color-accent);
     padding-bottom: 0.1em;
-    background-color: oklch(from var(--color-accent) 95% 5% h);
+    background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
 }
 
 /* ===== Contact form (Step 3) ===== */
 input,
 textarea,
-button {
+button,
+select {
     font: inherit;
 }
 
@@ -115,14 +122,14 @@ section {
 /* Section titles (Summary, Education, Experience...) */
 section h2 {
     color: var(--color-accent);
-    border-bottom: 1px solid oklch(80% 3% 200);
+    border-bottom: 1px solid var(--border-color);
     padding-bottom: 0.2em;
 }
 
 /* Each job / school / project, with a soft colored line on the left */
 section article {
     margin-block: 1.5em;
-    border-left: 3px solid oklch(from var(--color-accent) 85% 10% h);
+    border-left: 3px solid color-mix(in oklch, var(--color-accent), canvas 60%);
     padding-left: 1em;
 }
 
@@ -133,7 +140,7 @@ section article h3 {
 /* The location/date line under each title */
 header p {
     margin-top: 0;
-    color: oklch(50% 3% 200);
+    color: color-mix(in oklch, canvastext 65%, canvas);
     font-size: 90%;
 }
 
@@ -145,4 +152,12 @@ section li {
 /* Skill category names in the accent color */
 section li strong {
     color: var(--color-accent);
+}
+
+/* ===== Lab 3, Step 4.3: theme switcher in the top right corner ===== */
+.color-scheme {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 80%;
 }

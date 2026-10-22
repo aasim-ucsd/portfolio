@@ -160,4 +160,28 @@ section li strong {
     top: 1rem;
     right: 1rem;
     font-size: 80%;
+} 
+
+/* ===== Lab 4: GitHub stats on the homepage ===== */
+#profile-stats dl {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 0.25em 1em;
+}
+
+/* labels on the first row, numbers on the second row */
+#profile-stats dt {
+    grid-row: 1;
+    font-size: 80%;
+    text-transform: uppercase;
+    color: color-mix(in oklch, canvastext 65%, canvas);
+}
+
+#profile-stats dd {
+    grid-row: 2;
+    margin: 0;
+    font-size: 200%;
+    font-weight: bold;
+    color: var(--color-accent);
 }

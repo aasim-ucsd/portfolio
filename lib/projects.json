@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Lab 4: JavaScript II",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Loaded my projects from a JSON file and showed live GitHub profile stats on my homepage using the GitHub API."
+  },
+  {
+    "title": "Lab 3: Introduction to JS",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Built my site's navigation menu with JavaScript and added a light/dark theme switcher that remembers the user's choice."
+  },
+  {
+    "title": "Lab 2: Styling with CSS",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Styled my portfolio with Flexbox and CSS Grid, including a responsive projects grid and a contact form laid out with subgrid."
+  },
+  {
+    "title": "Lab 1: Personal Website",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Created my personal portfolio site from scratch with HTML and published it on GitHub Pages."
+  },
+  {
+    "title": "Fake Review Detection Using Machine Learning",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Built an end-to-end ML pipeline to classify online reviews as genuine or fraudulent, and compared models using accuracy, precision, and recall."
+  },
+  {
+    "title": "LLM-Powered Job Posting Tracker",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Helped design an internal app at the San Diego Supercomputer Center that tracks job postings using an LLM backend."
+  },
+  {
+    "title": "Startup Market Trends Analysis",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Analyzed data on early-stage tech startups at HP Tech Ventures to find market trends and growth signals, presented in a Synergy Report."
+  },
+  {
+    "title": "Girls Who Code Social Impact Project",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Worked on a team project using Python to analyze data for a real-world social-impact problem, and presented the results in a demo."
+  },
+  {
+    "title": "Placeholder Project 9",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Replace this with a real project."
+  },
+  {
+    "title": "Placeholder Project 10",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Replace this with a real project."
+  },
+  {
+    "title": "Placeholder Project 11",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Replace this with a real project."
+  },
+  {
+    "title": "Placeholder Project 12",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Replace this with a real project."
+  }
+]

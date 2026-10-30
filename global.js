@@ -115,24 +115,4 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
   // Clear old content so projects don't show up twice
   containerElement.innerHTML = '';
 
-  // Show a message if there are no projects
-  if (!projects || projects.length === 0) {
-    containerElement.innerHTML = '<p>No projects to show yet.</p>';
-    return;
-  }
-
-  for (let project of projects) {
-    const article = document.createElement('article');
-    article.innerHTML = `
-      <${headingLevel}>${project.title}</${headingLevel}>
-      <img src="${project.image}" alt="${project.title}">
-      <p>${project.description}</p>
-    `;
-    containerElement.appendChild(article);
-  }
-}
-
-// ===== Lab 4, Step 3.2: get public profile data from the GitHub API =====
-export async function fetchGitHubData(username) {
-  return fetchJSON(`https://api.github.com/users/${username}`);
-}
+  // Show a message if there

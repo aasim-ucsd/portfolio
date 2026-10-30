@@ -160,7 +160,7 @@ section li strong {
     top: 1rem;
     right: 1rem;
     font-size: 80%;
-} 
+}
 
 /* ===== Lab 4: GitHub stats on the homepage ===== */
 #profile-stats dl {
@@ -184,4 +184,88 @@ section li strong {
     font-size: 200%;
     font-weight: bold;
     color: var(--color-accent);
+}
+
+/* ===== Lab 5, Step 0.1: project year under the description ===== */
+.project-year {
+    font-family: Baskerville, serif;
+    font-style: italic;
+    font-variant-numeric: oldstyle-nums;
+    color: color-mix(in oklch, canvastext 60%, canvas);
+    margin-top: 0;
+}
+
+/* ===== Lab 5, Step 2.3: pie chart and legend side by side ===== */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+/* ===== Lab 5, Step 1.1: pie chart size ===== */
+#projects-pie-plot {
+    max-width: 20em;
+    margin-block: 2em;
+    overflow: visible;
+
+    /* Step 5.1: fade the other slices when one is hovered */
+    &:has(path:hover) {
+        path:not(:hover) {
+            opacity: 0.5;
+        }
+    }
+}
+
+#projects-pie-plot path {
+    transition: 300ms;
+    cursor: pointer;
+}
+
+/* ===== Lab 5, Step 2.2: legend ===== */
+.legend {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+    gap: 1em;
+    padding: 1em;
+    margin: 0;
+    list-style: none;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5em;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    cursor: pointer;
+}
+
+.swatch {
+    display: inline-block;
+    width: 1em;
+    aspect-ratio: 1 / 1;
+    background-color: var(--color);
+    border-radius: 50%;
+}
+
+/* ===== Lab 5, Step 5.2: the selected year's slice and legend item ===== */
+.selected {
+    --color: oklch(85% 0.2 130) !important;
+
+    &:is(path) {
+        fill: var(--color);
+    }
+}
+
+.legend-item.selected {
+    font-weight: bold;
+}
+
+/* ===== Lab 5, Step 4.1: search box ===== */
+.searchBar {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5em;
+    margin-block: 1em 2em;
 }

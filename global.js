@@ -123,9 +123,14 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
   }
 
   for (let project of projects) {
+    // Lab 7, Step 7: if the project has a url, make its title a link
+    const title = project.url
+      ? `<a href="${project.url}" target="_blank">${project.title}</a>`
+      : project.title;
+
     const article = document.createElement('article');
     article.innerHTML = `
-      <${headingLevel}>${project.title}</${headingLevel}>
+      <${headingLevel}>${title}</${headingLevel}>
       <img src="${project.image}" alt="${project.title}">
       <div>
         <p>${project.description}</p>

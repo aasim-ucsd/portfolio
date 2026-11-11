@@ -1,5 +1,12 @@
 [
   {
+    "title": "Bikewatching",
+    "year": "2026",
+    "image": "https://aasim-ucsd.github.io/portfolio/images/bikewatching.png",
+    "description": "An interactive map of Bluebikes traffic in Boston and Cambridge, built with Mapbox and D3. Circle size shows traffic at each station, color shows whether more bikes leave or arrive, and a slider filters by time of day.",
+    "url": "https://aasim-ucsd.github.io/bikewatching/"
+  },
+  {
     "title": "Lab 4: JavaScript II",
     "year": "2026",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",

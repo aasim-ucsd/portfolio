@@ -10,21 +10,39 @@
 </head>
 <body>
     <h1>Meta</h1>
-    <p>This page shows stats about the code of this website, based on its git history.</p>
+    <p>This page shows stats about the code of this website, based on its git history.
+       Scroll down to watch the codebase grow, one commit at a time.</p>
 
-    <!-- Step 1: summary stats -->
+    <!-- Lab 8, Step 1.1: time slider -->
+    <div id="time-filter">
+        <label for="commit-progress">Show commits until:</label>
+        <input type="range" id="commit-progress" min="0" max="100" value="100">
+        <time id="commit-slider-time"></time>
+    </div>
+
+    <!-- Lab 6, Step 1: summary stats (now updates with the slider) -->
     <h2>Summary</h2>
     <div id="stats"></div>
 
-    <!-- Step 2: scatterplot -->
+    <!-- Lab 8, Step 3: scrollytelling: story on the left, sticky chart on the right -->
     <h2>Commits by time of day</h2>
-    <div id="chart"></div>
+    <div id="scrolly-1">
+        <div id="scatter-story"></div>
+        <div id="scatter-plot">
+            <div id="chart"></div>
 
-    <!-- Step 5: what's selected with the brush -->
-    <p id="selection-count">No commits selected</p>
-    <dl id="language-breakdown" class="stats"></dl>
+            <!-- Lab 6, Step 5: what's selected with the brush -->
+            <p id="selection-count">No commits selected</p>
+            <dl id="language-breakdown" class="stats"></dl>
+        </div>
+    </div>
 
-    <!-- Step 3: tooltip shown when hovering over a dot -->
+    <!-- Lab 8, Step 2: unit visualization of file sizes -->
+    <h2>The race for the biggest file</h2>
+    <p>Each dot is one line of code, colored by language.</p>
+    <dl id="files"></dl>
+
+    <!-- Lab 6, Step 3: tooltip shown when hovering over a dot -->
     <dl id="commit-tooltip" class="info tooltip" hidden>
         <dt>Commit</dt>
         <dd><a href="" id="commit-link" target="_blank"></a></dd>
